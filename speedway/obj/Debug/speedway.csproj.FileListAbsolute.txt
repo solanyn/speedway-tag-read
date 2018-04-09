@@ -1,0 +1,14 @@
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\speedway.exe.config
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\speedway.exe
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\speedway.pdb
+C:\Users\Andrew Chen\source\repos\speedway\speedway\obj\Debug\speedway.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Chen\source\repos\speedway\speedway\obj\Debug\speedway.csproj.CoreCompileInputs.cache
+C:\Users\Andrew Chen\source\repos\speedway\speedway\obj\Debug\speedway.exe
+C:\Users\Andrew Chen\source\repos\speedway\speedway\obj\Debug\speedway.pdb
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\Impinj.OctaneSdk.dll
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\LLRP.dll
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\LLRP.Impinj.dll
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\Renci.SshNet.dll
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\Andrew Chen\source\repos\speedway\speedway\bin\Debug\Renci.SshNet.xml
+C:\Users\Andrew Chen\source\repos\speedway\speedway\obj\Debug\speedway.csproj.CopyComplete

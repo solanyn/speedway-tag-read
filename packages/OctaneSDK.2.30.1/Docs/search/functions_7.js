@@ -1,0 +1,6 @@
+var searchData=
+[
+  ['impinjreader',['ImpinjReader',['../class_impinj_1_1_octane_sdk_1_1_impinj_reader.html#a094c727d7330f629273bac622677ad39',1,'Impinj.OctaneSdk.ImpinjReader.ImpinjReader(string address, string name)'],['../class_impinj_1_1_octane_sdk_1_1_impinj_reader.html#af0b361c6d83b9307717f63300a5a6abe',1,'Impinj.OctaneSdk.ImpinjReader.ImpinjReader()']]],
+  ['impinjreaderdebug',['ImpinjReaderDebug',['../class_impinj_1_1_octane_sdk_1_1_impinj_reader_debug.html#a49a5a799ad79d651d21216d65ad6e117',1,'Impinj::OctaneSdk::ImpinjReaderDebug']]],
+  ['impinjtimestamp',['ImpinjTimestamp',['../class_impinj_1_1_octane_sdk_1_1_impinj_timestamp.html#ab952f3e20f03ef46d2936b15dd701ba7',1,'Impinj.OctaneSdk.ImpinjTimestamp.ImpinjTimestamp()'],['../class_impinj_1_1_octane_sdk_1_1_impinj_timestamp.html#aeeeebf24554bd3cea876276d15abbbe2',1,'Impinj.OctaneSdk.ImpinjTimestamp.ImpinjTimestamp(DateTime dt)'],['../class_impinj_1_1_octane_sdk_1_1_impinj_timestamp.html#afe8d035d247a056e73d19e552321c7ba',1,'Impinj.OctaneSdk.ImpinjTimestamp.ImpinjTimestamp(ulong utc)'],['../class_impinj_1_1_octane_sdk_1_1_impinj_timestamp.html#aee9bf9bf8b8af162121e49e05430ce47',1,'Impinj.OctaneSdk.ImpinjTimestamp.ImpinjTimestamp(Org.LLRP.LTK.LLRPV1.UNION_Timestamp timestampFromLlrp)']]]
+];

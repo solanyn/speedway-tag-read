@@ -1,0 +1,48 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<ADD_ACCESSSPEC
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+   xmlns:Impinj="http://developer.impinj.com/ltk/schema/encoding/xml/1.28"
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0 http://www.llrp.org/ltk/schema/core/encoding/xml/1.0/llrp.xsd http://developer.impinj.com/ltk/schema/encoding/xml/1.28 http://developer.impinj.com/ltk/schema/encoding/xml/1.28/impinj.xsd" 
+ MessageID="0">
+    <AccessSpec>
+        <AccessSpecID>23</AccessSpecID>
+        <AntennaID>0</AntennaID>
+        <!-- 0 means to work on all antennas -->
+        <ProtocolID>EPCGlobalClass1Gen2</ProtocolID>
+        <CurrentState>Disabled</CurrentState>
+        <ROSpecID>0</ROSpecID>
+        <!--0 means to work with any RO Spec -->
+        <AccessSpecStopTrigger>
+            <AccessSpecStopTrigger>Null</AccessSpecStopTrigger>
+            <OperationCountValue>0</OperationCountValue>
+            <!--OperationCountValue is ignored since we are not using the trigger -->
+        </AccessSpecStopTrigger>
+        <AccessCommand>
+            <C1G2TagSpec>
+                <C1G2TargetTag>
+                    <MB>1</MB>
+                    <Match>true</Match>
+                    <Pointer>16</Pointer>
+                    <!--GID-96 looks like hex 300035 -->
+                    <!-- Use the mask so we the 11 remaining PC bits are don't care  -->
+                    <TagMask>f800ff</TagMask>
+                    <TagData>300035</TagData>
+                </C1G2TargetTag>
+            </C1G2TagSpec>
+            <!--read the first two words of user memory-->
+            <C1G2Read>
+                <OpSpecID>1</OpSpecID>
+                <AccessPassword>0</AccessPassword>
+                <MB>3</MB>
+                <WordPointer>0</WordPointer>
+                <WordCount>2</WordCount>
+            </C1G2Read>
+        </AccessCommand>
+        <!--To reduce bandwidth, report only when ROSpec generates report  -->
+        <AccessReportSpec>
+            <AccessReportTrigger>Whenever_ROReport_Is_Generated</AccessReportTrigger>
+        </AccessReportSpec>
+    </AccessSpec>
+</ADD_ACCESSSPEC>

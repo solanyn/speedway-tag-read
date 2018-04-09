@@ -1,0 +1,14 @@
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\ReadTags.exe.config
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\ReadTags.exe
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\ReadTags.pdb
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\Impinj.OctaneSdk.dll
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\Renci.SshNet.dll
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\LLRP.Impinj.dll
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\LLRP.dll
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\Impinj.OctaneSdk.xml
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\obj\Debug\ReadTags.csproj.CoreCompileInputs.cache
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\obj\Debug\ReadTags.csproj.CopyComplete
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\obj\Debug\ReadTags.exe
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\obj\Debug\ReadTags.pdb
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\obj\Debug\ReadTags.csprojResolveAssemblyReference.cache
+C:\Users\Andrew Chen\source\repos\speedway\packages\OctaneSDK.2.30.1\Examples\ReadTags\bin\Debug\Renci.SshNet.xml

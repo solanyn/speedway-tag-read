@@ -1,0 +1,72 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SET_READER_CONFIG
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+   xmlns:Impinj="http://developer.impinj.com/ltk/schema/encoding/xml/1.28"
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0 http://www.llrp.org/ltk/schema/core/encoding/xml/1.0/llrp.xsd http://developer.impinj.com/ltk/schema/encoding/xml/1.28 http://developer.impinj.com/ltk/schema/encoding/xml/1.28/impinj.xsd" 
+ MessageID="0">
+    <ResetToFactoryDefault>false</ResetToFactoryDefault>
+    <AntennaConfiguration>
+        <AntennaID>0</AntennaID>
+        <!-- we will over-write the transmit power in our code -->
+        <RFTransmitter>
+            <HopTableID>1</HopTableID>
+            <ChannelIndex>1</ChannelIndex>
+            <TransmitPower>1</TransmitPower>
+        </RFTransmitter>
+        <C1G2InventoryCommand>
+            <TagInventoryStateAware>false</TagInventoryStateAware>
+            <C1G2RFControl>
+                <!--Set mode to Gen2 DRM AutoSet Mode Tari is ignored -->
+                <ModeIndex>1000</ModeIndex>
+                <Tari>0</Tari>
+            </C1G2RFControl>
+            <C1G2SingulationControl>
+                <!--Need Dual-target for Tag Direction, so use session 2 -->
+                <Session>2</Session>
+                <TagPopulation>32</TagPopulation>
+                <TagTransitTime>0</TagTransitTime>
+            </C1G2SingulationControl>
+            <Impinj:ImpinjInventorySearchMode xmlns="http://developer.impinj.com/ltk/schema/encoding/xml/1.28">
+                <!--Need Dual-target for Tag Direction-->
+                <InventorySearchMode>Dual_Target</InventorySearchMode>
+            </Impinj:ImpinjInventorySearchMode>
+            <!--Enable Low Duty Cycle when no tags are seen for 10 seconds.  Check antennas every 200 msec -->
+            <Impinj:ImpinjLowDutyCycle xmlns="http://developer.impinj.com/ltk/schema/encoding/xml/1.28">
+                <LowDutyCycleMode>Enabled</LowDutyCycleMode>
+                <EmptyFieldTimeout>10000</EmptyFieldTimeout>
+                <FieldPingInterval>200</FieldPingInterval>
+            </Impinj:ImpinjLowDutyCycle>
+        </C1G2InventoryCommand>
+    </AntennaConfiguration>
+    <ROReportSpec>
+        <ROReportTrigger>Upon_N_Tags_Or_End_Of_ROSpec</ROReportTrigger>
+        <N>1</N>
+        <!--Have to report every tag when tag direction is enabled -->
+        <TagReportContentSelector>
+            <EnableROSpecID>false</EnableROSpecID>
+            <EnableSpecIndex>false</EnableSpecIndex>
+            <EnableInventoryParameterSpecID>false</EnableInventoryParameterSpecID>
+            <EnableAntennaID>false</EnableAntennaID>
+            <EnableChannelIndex>false</EnableChannelIndex>
+            <EnablePeakRSSI>false</EnablePeakRSSI>
+            <EnableFirstSeenTimestamp>false</EnableFirstSeenTimestamp>
+            <EnableLastSeenTimestamp>false</EnableLastSeenTimestamp>
+            <EnableTagSeenCount>false</EnableTagSeenCount>
+            <EnableAccessSpecID>false</EnableAccessSpecID>
+            <C1G2EPCMemorySelector>
+                <EnableCRC>false</EnableCRC>
+                <EnablePCBits>false</EnablePCBits>
+            </C1G2EPCMemorySelector>
+        </TagReportContentSelector>
+        <!-- Don't need any extra tag information beyond EPC -->
+        <!-- NOTE:  Tag Direction does not work on all speedway readers
+             Enable only for Revolution.  This parameter will be added 
+             conditionally in the code -->
+        <!--<Impinj:ImpinjTagDirectionReporting xmlns="http://developer.impinj.com/ltk/schema/encoding/xml/1.0">
+            <EnableTagDirection>true</EnableTagDirection>
+            <AntennaConfiguration>Dual_Antenna</AntennaConfiguration>
+        </Impinj:ImpinjTagDirectionReporting>-->
+    </ROReportSpec>
+</SET_READER_CONFIG>

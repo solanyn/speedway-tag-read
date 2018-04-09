@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8" ?>
+<SET_READER_CONFIG
+   xmlns="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:llrp="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0"
+   xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"  
+   xmlns:Impinj="http://developer.impinj.com/ltk/schema/encoding/xml/1.28"
+  xsi:schemaLocation="http://www.llrp.org/ltk/schema/core/encoding/xml/1.0 http://www.llrp.org/ltk/schema/core/encoding/xml/1.0/llrp.xsd http://developer.impinj.com/ltk/schema/encoding/xml/1.28 http://developer.impinj.com/ltk/schema/encoding/xml/1.28/impinj.xsd" 
+ MessageID="0">
+    <ResetToFactoryDefault>false</ResetToFactoryDefault>
+    <AntennaConfiguration>
+        <AntennaID>0</AntennaID>
+        <C1G2InventoryCommand>
+            <TagInventoryStateAware>false</TagInventoryStateAware>
+            <!--Enable Low Duty Cycle when no tags are seen for 10 seconds.  Check antennas every 200 msec -->
+            <Impinj:ImpinjLowDutyCycle xmlns="http://developer.impinj.com/ltk/schema/encoding/xml/1.28">
+                <LowDutyCycleMode>Enabled</LowDutyCycleMode>
+                <EmptyFieldTimeout>10000</EmptyFieldTimeout>
+                <FieldPingInterval>200</FieldPingInterval>
+            </Impinj:ImpinjLowDutyCycle>
+        </C1G2InventoryCommand>
+    </AntennaConfiguration>
+    <ROReportSpec>
+        <ROReportTrigger>None</ROReportTrigger>
+        <N>0</N>
+        <!--N is ignored when report trigger is none -->
+        <TagReportContentSelector>
+            <EnableROSpecID>false</EnableROSpecID>
+            <EnableSpecIndex>false</EnableSpecIndex>
+            <EnableInventoryParameterSpecID>false</EnableInventoryParameterSpecID>
+            <EnableAntennaID>false</EnableAntennaID>
+            <EnableChannelIndex>false</EnableChannelIndex>
+            <EnablePeakRSSI>false</EnablePeakRSSI>
+            <EnableFirstSeenTimestamp>true</EnableFirstSeenTimestamp>
+            <EnableLastSeenTimestamp>false</EnableLastSeenTimestamp>
+            <EnableTagSeenCount>false</EnableTagSeenCount>
+            <EnableAccessSpecID>false</EnableAccessSpecID>
+            <C1G2EPCMemorySelector>
+                <EnableCRC>false</EnableCRC>
+                <EnablePCBits>false</EnablePCBits>
+            </C1G2EPCMemorySelector>
+        </TagReportContentSelector>
+    </ROReportSpec>
+</SET_READER_CONFIG>
